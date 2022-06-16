@@ -1,10 +1,7 @@
 package com.javamentor.task_3_1_1.model;
 
-import lombok.Data;
-
 import javax.persistence.*;
 
-@Data
 @Entity
 @Table(name = "users")
 public class User {
@@ -13,10 +10,13 @@ public class User {
     private Long id;
     @Column(name="firstName")
     private String firstName;
+
     @Column(name="lastName")
     private String lastName;
+
     @Column(name="age")
     private Byte age;
+
     @Column(name="email")
     private String email;
 
